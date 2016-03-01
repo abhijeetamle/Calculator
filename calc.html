@@ -1,0 +1,65 @@
+<html>
+<h1>Welcome to Calculator</h1>
+<body>
+<script>
+    function add2Display(op){
+	if(op=='+'){
+	document.getElementById('display').value+='+';
+	}else if(op=='-'){
+	document.getElementById('display').value+='-';
+	}else if(op=='*'){
+	document.getElementById('display').value+='*';
+	}else if(op=='/'){
+	document.getElementById('display').value+='/';
+	}else if(op=='1'){
+	document.getElementById('display').value+='1';
+	}else if(op=='2'){
+	document.getElementById('display').value+='2';
+	}else if(op=='3'){
+	document.getElementById('display').value+='3';
+	}else if(op=='4'){
+	document.getElementById('display').value+='4';
+	}else if(op=='5'){
+	document.getElementById('display').value+='5';
+	}else if(op=='6'){
+	document.getElementById('display').value+='6';
+	}else if(op=='7'){
+	document.getElementById('display').value+='7';
+	}else if(op=='8'){
+	document.getElementById('display').value+='8';
+	}else if(op=='9'){
+	document.getElementById('display').value+='9';
+	}else if(op=='0'){
+	document.getElementById('display').value+='0';
+	}	
+    }
+   function evaluateValue(){
+     document.getElementById('display').value=eval(document.getElementById('display').value);
+    }    
+</script>
+
+<input type="text" id="display"  />
+<br>
+<button id="1" onclick="add2Display('1')">1</button>
+<button id="2" onclick="add2Display('2')">2</button>
+<button id="3" onclick="add2Display('3')">3</button>
+<br>
+<button id="4" onclick="add2Display('4')">4</button>
+<button id="5" onclick="add2Display('5')">5</button>
+<button id="6" onclick="add2Display('6')">6</button>
+<br>
+<button id="7" onclick="add2Display('7')">7</button>
+<button id="8" onclick="add2Display('8')">8</button>
+<button id="9" onclick="add2Display('9')">9</button>
+<br>
+<button id="0" onclick="add2Display('0')">0</button>
+<br>
+<button id="+" onclick="add2Display('+')">+</button>
+<button id="-" onclick="add2Display('-')">-</button>
+<button id="*" onclick="add2Display('*')">*</button>
+<button id="/" onclick="add2Display('/')">/</button>
+<button id="=" onclick="evaluateValue()">=</button>
+<button id="Clear" onclick="document.getElementById('display').value=' '">Clear</button>
+
+</body>
+</html>
